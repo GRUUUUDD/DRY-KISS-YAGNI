@@ -62,6 +62,28 @@ class Triangle
     }
 }
 
+class Rectangle
+{
+    public double Width;
+    public double Height;
+
+    public Rectangle(double width, double height)
+    {
+        Width = width;
+        Height = height;
+    }
+
+    public double CalculateArea()
+    {
+        return Width * Height;
+    }
+
+    public void PrintArea()
+    {
+        Console.WriteLine("Rectangle area: " + CalculateArea());
+    }
+}
+
 class Program
 {
     static void Main()
