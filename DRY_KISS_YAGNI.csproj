@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DRY_KISS_YAGNI_OLD.cs" />
+    <Compile Include="DRY_KISS_YAGNI_NEW.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- _OLD только для сравнения, в сборке участвует только _NEW -->
+    <Compile Remove="DRY_KISS_YAGNI_OLD.cs" />
+  </ItemGroup>
+</Project>
